@@ -1,0 +1,34 @@
+<!--<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Welcome 👋</h2>
+
+<!--        this is for jsp-->
+
+<!--        <p><strong>ID:</strong> ${alien1.aid}</p>-->
+<!--        <p><strong>Name:</strong> ${alien1.aname}</p>-->
+
+<!--        <p>Welcome to ${course}</p>-->
+
+        <p th:text="'Id : ' + ${alien1.aid}"><strong>ID:</strong> ${alien1.aid}</p>
+        <p th:text="'Name : ' + ${alien1.aname}"><strong>Name:</strong> ${alien1.aname}</p>
+
+        <p th:text="'Welcome to ' + ${course}">Welcome to ${course}</p>
+
+        <a href="/" class="btn">Go Back</a>
+    </div>
+
+</body>
+</html>
